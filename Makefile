@@ -1,5 +1,5 @@
-server : demo.o server.o
-	g++ demo.o server.o -o server
+#server : demo.o server.o
+#	g++ demo.o server.o -o server
 
 client: client.o
 	g++ client.o -o client
@@ -7,11 +7,11 @@ client: client.o
 client.o : client.cpp
 	g++ -c client.cpp
 
-server.o : server.cpp
-	g++ -c server.cpp
+#server.o : server.cpp
+#	g++ -c server.cpp
 
-demo.o : demo.cpp
-	g++ -c demo.cpp
+#demo.o : demo.cpp
+#	g++ -c demo.cpp
 
 
 clean:
